@@ -5,9 +5,9 @@ export const AUTHOR_NAME = 'Abhiuday';
 export const SITE_URL = 'https://abhiudayg-blog.vercel.app';
 export const RSS_FEED_URL = `${SITE_URL}/rss.xml`;
 
-export const GITHUB_URL = 'https://github.com/aeswibon';
-export const TWITTER_URL = 'https://x.com/aeswibon';
-export const LINKEDIN_URL = 'https://linkedin.com/in/aeswibon';
+export const GITHUB_URL = 'https://github.com/abhiudayg';
+export const TWITTER_URL = 'https://x.com/abhiudayg';
+export const LINKEDIN_URL = 'https://linkedin.com/in/abhiudayg';
 export const DEVTO_URL = 'https://dev.to/abhiudayg';
 export const HASHNODE_URL = 'https://hashnode.com/@abhiudayg';
 export const REDDIT_URL = 'https://www.reddit.com/user/abhiudayg/';
@@ -20,13 +20,13 @@ export const SOCIAL_LINKS: ReadonlyArray<{
 	href: string;
 	icon: SocialIconId;
 }> = [
-	{ name: 'GitHub', href: GITHUB_URL, icon: 'github' },
-	{ name: 'X', href: TWITTER_URL, icon: 'x' },
-	{ name: 'LinkedIn', href: LINKEDIN_URL, icon: 'linkedin' },
-	{ name: 'dev.to', href: DEVTO_URL, icon: 'devto' },
-	{ name: 'Hashnode', href: HASHNODE_URL, icon: 'hashnode' },
-	{ name: 'Reddit', href: REDDIT_URL, icon: 'reddit' },
-];
+		{ name: 'GitHub', href: GITHUB_URL, icon: 'github' },
+		{ name: 'X', href: TWITTER_URL, icon: 'x' },
+		{ name: 'LinkedIn', href: LINKEDIN_URL, icon: 'linkedin' },
+		{ name: 'dev.to', href: DEVTO_URL, icon: 'devto' },
+		{ name: 'Hashnode', href: HASHNODE_URL, icon: 'hashnode' },
+		{ name: 'Reddit', href: REDDIT_URL, icon: 'reddit' },
+	];
 
 export const BLOG_SERIES = {
 	'manga-cdc': {
