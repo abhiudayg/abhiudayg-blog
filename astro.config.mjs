@@ -3,6 +3,7 @@
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { defineConfig } from 'astro/config';
+import { unified } from '@astrojs/markdown-remark';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 
@@ -12,18 +13,17 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   site: 'https://abhiudayg-blog.vercel.app',
   integrations: [
-    mdx({
-      remarkPlugins: [remarkMath],
-      rehypePlugins: [rehypeKatex],
-    }),
+    mdx(),
     sitemap({
       filter: (page) => !page.includes('/rss.xml'),
     }),
   ],
 
   markdown: {
-    remarkPlugins: [remarkMath],
-    rehypePlugins: [rehypeKatex],
+    processor: unified({
+      remarkPlugins: [remarkMath],
+      rehypePlugins: [rehypeKatex],
+    }),
     syntaxHighlight: {
       type: 'shiki',
       excludeLangs: ['mermaid', 'math'],
