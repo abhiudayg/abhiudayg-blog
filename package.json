@@ -9,6 +9,9 @@
     "url": "https://github.com/aeswibon/abhiudayg-blog.git"
   },
   "homepage": "https://abhiudayg-blog.vercel.app",
+  "engines": {
+    "node": ">=24.22.1"
+  },
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",

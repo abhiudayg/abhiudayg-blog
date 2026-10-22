@@ -29,13 +29,21 @@ const schema = graphJsonLd(blogJsonLd(Astro.site));
 			)
 		}
 	</head>
-	<body>
+	<body class="relative overflow-x-hidden">
+		<!-- Subdued ambient warm radial halo -->
+		<div
+			class="pointer-events-none fixed top-0 left-1/2 -z-10 h-[400px] w-[800px] -translate-x-1/2 rounded-full bg-accent/5 blur-[130px]"
+			aria-hidden="true"
+		></div>
+
 		<Header />
-		<main class="layout-archive">
-			<section class="mb-6">
-				<p class="eyebrow">Archive</p>
-				<h1>Blog</h1>
-				<p class="lead">Everything I've published on this journey, newest first.</p>
+		<main class="layout-archive py-10 md:py-16">
+			<section class="mb-8 border-b border-border pb-6">
+				<p class="eyebrow">// Dispatches &amp; Engineering Journal</p>
+				<h1 class="font-serif text-3xl md:text-4xl font-normal text-text mt-1">Blog Archive</h1>
+				<p class="lead mt-2">
+					Technical write-ups on building software in public — architecture, CI, agents, and lessons from the repos I ship.
+				</p>
 			</section>
 
 			<SeriesFilter />

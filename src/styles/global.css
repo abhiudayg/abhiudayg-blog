@@ -5,65 +5,82 @@
 
 :root,
 [data-theme='light'] {
-	--bg: #f6f8fc;
+	--bg: #fcfcfd;
 	--bg-elevated: #ffffff;
-	--bg-subtle: #e9eef6;
+	--bg-subtle: #f1f5f9;
 	--text: #0f172a;
-	--text-muted: #5b6b82;
-	--accent: #0d9488;
-	--accent-hover: #0f766e;
-	--accent-soft: rgba(13, 148, 136, 0.1);
-	--accent-border: rgba(13, 148, 136, 0.35);
+	--text-muted: #64748b;
+	--accent: #d97706;
+	--accent-hover: #b45309;
+	--accent-soft: rgba(217, 119, 6, 0.1);
+	--accent-border: rgba(217, 119, 6, 0.35);
 	--accent-on: #ffffff;
-	--border: rgba(15, 23, 42, 0.1);
-	--code-bg: #e4ebf4;
-	--header-bg: rgba(246, 248, 252, 0.9);
-	--body-glow: rgba(13, 148, 136, 0.12);
-	--shadow: 0 14px 40px rgba(15, 23, 42, 0.08);
+	--tertiary: #0284c7;
+	--tertiary-soft: rgba(2, 132, 199, 0.1);
+	--border: rgba(15, 23, 42, 0.08);
+	--border-hover: rgba(217, 119, 6, 0.35);
+	--code-bg: #f1f5f9;
+	--header-bg: rgba(252, 252, 253, 0.85);
+	--body-glow: rgba(217, 119, 6, 0.07);
+	--shadow: 0 14px 40px rgba(15, 23, 42, 0.06);
 	--family-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
 	--family-serif: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
 	--family-sans: 'DM Sans Variable', system-ui, sans-serif;
-	--radius: 10px;
+	--radius: 8px;
 	color-scheme: light;
 }
 
 [data-theme='dark'] {
-	--bg: #0a0f1a;
-	--bg-elevated: #111827;
-	--bg-subtle: #172033;
-	--text: #e8eef7;
+	--bg: #0f131b;
+	--bg-elevated: #181c24;
+	--bg-subtle: #1c2028;
+	--text: #dfe2ee;
 	--text-muted: #94a3b8;
-	--accent: #2dd4bf;
-	--accent-hover: #5eead4;
-	--accent-soft: rgba(45, 212, 191, 0.12);
-	--accent-border: rgba(45, 212, 191, 0.4);
-	--accent-on: #042f2e;
-	--border: rgba(148, 163, 184, 0.14);
-	--code-bg: #141d2e;
-	--header-bg: rgba(10, 15, 26, 0.9);
-	--body-glow: rgba(45, 212, 191, 0.08);
-	--shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+	--accent: #f59e0b;
+	--accent-hover: #ffc174;
+	--accent-soft: rgba(245, 158, 11, 0.12);
+	--accent-border: rgba(245, 158, 11, 0.35);
+	--accent-on: #0a0e16;
+	--tertiary: #38bdf8;
+	--tertiary-soft: rgba(56, 189, 248, 0.12);
+	--border: rgba(255, 255, 255, 0.08);
+	--border-hover: rgba(245, 158, 11, 0.4);
+	--code-bg: #0a0e16;
+	--header-bg: rgba(15, 19, 27, 0.85);
+	--body-glow: rgba(245, 158, 11, 0.06);
+	--shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+	--family-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+	--family-serif: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
+	--family-sans: 'DM Sans Variable', system-ui, sans-serif;
+	--radius: 8px;
 	color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
 	:root:not([data-theme='light']):not([data-theme='dark']),
 	[data-theme='system'] {
-		--bg: #0a0f1a;
-		--bg-elevated: #111827;
-		--bg-subtle: #172033;
-		--text: #e8eef7;
+		--bg: #0f131b;
+		--bg-elevated: #181c24;
+		--bg-subtle: #1c2028;
+		--text: #dfe2ee;
 		--text-muted: #94a3b8;
-		--accent: #2dd4bf;
-		--accent-hover: #5eead4;
-		--accent-soft: rgba(45, 212, 191, 0.12);
-		--accent-border: rgba(45, 212, 191, 0.4);
-		--accent-on: #042f2e;
-		--border: rgba(148, 163, 184, 0.14);
-		--code-bg: #141d2e;
-		--header-bg: rgba(10, 15, 26, 0.9);
-		--body-glow: rgba(45, 212, 191, 0.08);
-		--shadow: 0 16px 48px rgba(0, 0, 0, 0.45);
+		--accent: #f59e0b;
+		--accent-hover: #ffc174;
+		--accent-soft: rgba(245, 158, 11, 0.12);
+		--accent-border: rgba(245, 158, 11, 0.35);
+		--accent-on: #0a0e16;
+		--tertiary: #38bdf8;
+		--tertiary-soft: rgba(56, 189, 248, 0.12);
+		--border: rgba(255, 255, 255, 0.08);
+		--border-hover: rgba(245, 158, 11, 0.4);
+		--code-bg: #0a0e16;
+		--header-bg: rgba(15, 19, 27, 0.85);
+		--body-glow: rgba(245, 158, 11, 0.06);
+		--shadow: 0 18px 48px rgba(0, 0, 0, 0.5);
+		--family-mono: 'JetBrains Mono Variable', ui-monospace, monospace;
+		--family-serif: 'Newsreader Variable', Georgia, 'Times New Roman', serif;
+		--family-sans: 'DM Sans Variable', system-ui, sans-serif;
+		--radius: 8px;
 		color-scheme: dark;
 	}
 }
@@ -79,7 +96,10 @@
 	--color-accent-soft: var(--accent-soft);
 	--color-accent-border: var(--accent-border);
 	--color-accent-on: var(--accent-on);
+	--color-tertiary: var(--tertiary);
+	--color-tertiary-soft: var(--tertiary-soft);
 	--color-border: var(--border);
+	--color-border-hover: var(--border-hover);
 	--color-code-bg: var(--code-bg);
 	--font-mono: var(--family-mono);
 	--font-serif: var(--family-serif);
@@ -96,8 +116,8 @@
 	body {
 		@apply m-0 font-sans text-[1.05rem] leading-relaxed text-text antialiased transition-colors duration-200;
 		background:
-			radial-gradient(ellipse 80% 55% at 50% -15%, var(--body-glow), transparent),
-			linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg) 28%),
+			radial-gradient(ellipse 80% 50% at 50% -10%, var(--body-glow), transparent),
+			linear-gradient(180deg, var(--bg-elevated) 0%, var(--bg) 24%),
 			var(--bg);
 	}
 
@@ -107,19 +127,19 @@
 	h4,
 	h5,
 	h6 {
-		@apply mb-2.5 font-sans font-bold leading-tight tracking-tight text-text;
+		@apply mb-2.5 leading-tight tracking-tight text-text;
 	}
 
 	h1 {
-		@apply text-[clamp(2.1rem,5vw,2.85rem)];
+		@apply font-serif font-normal text-[clamp(2.2rem,5vw,3.2rem)];
 	}
 
 	h2 {
-		@apply text-[1.55rem];
+		@apply font-serif font-medium text-[clamp(1.6rem,3.5vw,2rem)];
 	}
 
 	h3 {
-		@apply text-xl;
+		@apply font-sans font-semibold text-xl;
 	}
 
 	p {
@@ -262,20 +282,42 @@
 	}
 
 	.card {
-		@apply rounded-theme border border-border bg-bg-elevated p-5 shadow-card;
+		@apply rounded-theme border border-border bg-bg-elevated p-6 shadow-card transition-all duration-200;
+	}
+
+	.amber-glow {
+		@apply transition-all duration-200;
+	}
+
+	.amber-glow:hover {
+		box-shadow: 0 0 28px -4px rgba(245, 158, 11, 0.16);
+		border-color: var(--accent-border);
+	}
+
+	.badge-live {
+		@apply inline-flex items-center gap-2 rounded-full border border-border bg-bg-subtle px-3 py-1 font-mono text-xs text-text-muted;
+	}
+
+	.badge-dot {
+		@apply inline-block h-2 w-2 rounded-full bg-accent;
+		box-shadow: 0 0 8px var(--accent);
 	}
 
 	.btn {
-		@apply inline-flex items-center gap-2 rounded-full border border-border bg-bg-subtle px-4 py-2.5 font-mono text-sm text-text no-underline transition hover:border-accent-border hover:bg-accent-soft;
+		@apply inline-flex items-center gap-2 rounded-theme border border-border bg-bg-subtle px-4 py-2 font-mono text-sm text-text no-underline transition hover:border-accent-border hover:bg-accent-soft;
 	}
 
 	.btn-primary,
 	.button-primary {
-		@apply border-accent bg-accent font-bold text-accent-on hover:border-accent-hover hover:bg-accent-hover hover:text-accent-on;
+		@apply border-accent bg-accent font-semibold text-accent-on shadow-sm hover:border-accent-hover hover:bg-accent-hover hover:text-accent-on;
+	}
+
+	.btn-outline {
+		@apply inline-flex items-center gap-2 rounded-theme border border-border bg-transparent px-4 py-2 font-mono text-sm text-text no-underline transition hover:border-accent hover:text-accent;
 	}
 
 	.button {
-		@apply inline-flex items-center gap-2 rounded-full border border-border bg-bg-subtle px-4 py-2.5 font-mono text-sm text-text no-underline transition hover:border-accent-border hover:bg-accent-soft;
+		@apply inline-flex items-center gap-2 rounded-theme border border-border bg-bg-subtle px-4 py-2 font-mono text-sm text-text no-underline transition hover:border-accent-border hover:bg-accent-soft;
 	}
 
 	.nav-link {
@@ -347,15 +389,19 @@
 	}
 
 	.tag-series {
-		@apply inline-flex items-center rounded-full border border-accent-border bg-accent-soft px-2.5 py-1 font-mono text-[0.72rem] tracking-wide whitespace-nowrap text-text;
+		@apply inline-flex items-center rounded-theme border border-accent-border bg-accent-soft px-2.5 py-0.5 font-mono text-[0.72rem] font-medium tracking-wide whitespace-nowrap text-accent;
 	}
 
 	.tag-part {
-		@apply inline-flex items-center rounded-full border border-border bg-bg-subtle px-2.5 py-1 font-mono text-[0.72rem] tracking-wide text-text-muted uppercase;
+		@apply inline-flex items-center rounded-theme border border-border bg-bg-subtle px-2.5 py-0.5 font-mono text-[0.72rem] tracking-wide text-text-muted uppercase;
 	}
 
 	.post-card {
-		@apply flex h-full min-h-56 flex-col rounded-theme border border-border bg-bg-elevated p-5 text-inherit no-underline shadow-card transition hover:-translate-y-0.5 hover:border-accent-border hover:shadow-[0_18px_42px_rgba(15,23,42,0.12)];
+		@apply flex h-full min-h-56 flex-col rounded-theme border border-border bg-bg-elevated p-6 text-inherit no-underline shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-accent-border;
+	}
+
+	.post-card:hover {
+		box-shadow: 0 0 28px -4px rgba(245, 158, 11, 0.16);
 	}
 
 	.post-card-body {
@@ -363,15 +409,23 @@
 	}
 
 	.post-card-title {
-		@apply mb-2 line-clamp-2 text-[1.2rem] leading-snug text-text;
+		@apply mb-2 line-clamp-2 font-serif text-[1.25rem] font-medium leading-snug text-text transition-colors duration-150;
 	}
 
 	.post-card-description {
-		@apply m-0 line-clamp-3 text-[0.96rem] leading-relaxed text-text-muted;
+		@apply m-0 line-clamp-3 text-[0.94rem] leading-relaxed text-text-muted;
 	}
 
 	.post-card-footer {
-		@apply mt-4 flex min-h-[2.75rem] items-end justify-end border-t border-border pt-3.5;
+		@apply mt-5 flex min-h-[2.5rem] items-center justify-between border-t border-border pt-3.5 text-xs text-text-muted;
+	}
+
+	.series-card {
+		@apply flex flex-col justify-between rounded-theme border border-border bg-bg-elevated p-6 text-inherit no-underline shadow-card transition-all duration-200 hover:-translate-y-1 hover:border-accent-border;
+	}
+
+	.series-card:hover {
+		box-shadow: 0 0 28px -4px rgba(245, 158, 11, 0.16);
 	}
 
 	.pagination {
