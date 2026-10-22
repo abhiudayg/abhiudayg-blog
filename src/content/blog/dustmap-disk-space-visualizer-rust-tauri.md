@@ -117,7 +117,9 @@ Standard macOS utilities often report raw logical file sizes. But if you have a 
 
 DustMap queries `stat.st_blocks * 512` on macOS:
 
-$$\text{Allocated Bytes} = \text{st\_blocks} \times 512$$
+$$
+\text{Allocated Bytes} = \text{st\_blocks} \times 512
+$$
 
 This guarantees that when DustMap shows a folder using 24.5 GB of storage, removing it frees exactly 24.5 GB of APFS container space.
 
