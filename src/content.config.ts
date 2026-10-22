@@ -2,7 +2,13 @@ import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
-const seriesSlugs = ['manga-cdc', 'pipeline-compose', 'agent-brain'] as const;
+const seriesSlugs = [
+	'manga-cdc',
+	'pipeline-compose',
+	'agent-brain',
+	'dustmap',
+	'agentrun',
+] as const;
 
 const blog = defineCollection({
 	loader: glob({ base: './src/content/blog', pattern: '**/*.{md,mdx}' }),

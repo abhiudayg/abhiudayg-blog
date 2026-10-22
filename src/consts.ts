@@ -42,7 +42,17 @@ export const BLOG_SERIES = {
 	'agent-brain': {
 		title: 'agent-brain',
 		description: 'Local MCP routing for agents, skills, rules, and memory under a token budget.',
-		repoUrl: 'https://github.com/aeswibon/agent-brain',
+		repoUrl: 'https://github.com/abhiudayg/agent-brain',
+	},
+	'dustmap': {
+		title: 'dustmap',
+		description: 'A blazing-fast, transparent macOS disk space analyzer and conservative cleaner in Rust and Tauri.',
+		repoUrl: 'https://github.com/abhiudayg/dustmap',
+	},
+	'agentrun': {
+		title: 'agentrun',
+		description: 'Isolated, recoverable coding agent runtimes with container sandboxing on your own machine.',
+		repoUrl: 'https://github.com/abhiudayg/agentrun',
 	},
 } as const;
 
